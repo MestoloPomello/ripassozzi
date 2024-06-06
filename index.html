@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MOBIDEV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #242424;
+            color: darkturquoise;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .question-container {
+            background-color: #333;
+            border: 2px solid darkturquoise;
+            border-radius: 10px;
+            padding: 20px;
+            padding-top: 7px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .answers button {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #444;
+            color: darkturquoise;
+            border: 2px solid darkturquoise;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+        }
+
+        .answers button.correct {
+            background-color: green;
+        }
+
+        .answers button.incorrect {
+            background-color: red;
+        }
+
+        .footer-bar {
+            position: fixed;
+            /* La barra sarà posizionata in fondo allo schermo */
+            bottom: 0;
+            /* Posizione in basso */
+            left: 0;
+            /* Allineamento a sinistra */
+            width: 100%;
+            /* Occupa tutta la larghezza */
+            background-color: #333;
+            color: darkturquoise;
+            padding: 10px 20px;
+            /* Padding sopra e sotto */
+            box-sizing: border-box;
+            /* Include il padding nel calcolo della larghezza */
+        }
+
+        .footer-bar span {
+            margin-right: 20px;
+            /* Margine a destra tra gli elementi */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Domande</h1>
+    <div id="questions"></div>
+
+    <div class="footer-bar">
+        <span>Domande esatte: <span id="correct-answers">0</span></span>
+        <span>Domande sbagliate: <span id="incorrect-answers">0</span></span>
+        <span>Domande non risposte: <span id="unanswered-questions">0</span></span>
+        <span>Domande totali: <span id="total-questions">0</span></span>
+    </div>
+
+    <script>
+        const questionsData = [
+            {
+                "question": "Quale dei seguenti sensori è utilizzato per comprendere l'ambiente circostante nell'Augmented Reality (AR)?",
+                "correctAnswer": "Sensori di profondità",
+                "otherAnswers": [
+                    "Sensori di temperatura",
+                    "Sensori di pressione",
+                    "Sensori di umidità"
+                ]
+            },
+            {
+                "question": "Quale sistema di riferimento è necessario per la conversione delle coordinate nel processo di 'registration'?",
+                "correctAnswer": "Sistema di coordinate del mondo reale e sistema di coordinate schermo",
+                "otherAnswers": [
+                    "Sistema di coordinate locali e sistema di coordinate geografiche",
+                    "Sistema di coordinate polari e sistema di coordinate cilindriche",
+                    "Sistema di coordinate 3D e sistema di coordinate 2D"
+                ]
+            },
+            {
+                "question": "Quale approccio base alla registration utilizza segnali radio come GNSS, WiFi o Bluetooth?",
+                "correctAnswer": "Approccio basato su segnale radio",
+                "otherAnswers": [
+                    "Approccio basato su visione",
+                    "Approccio basato su sensori termici",
+                    "Approccio basato su marcatori espliciti"
+                ]
+            },
+            {
+                "question": "Cosa rappresenta la matrice di roto-traslazione nel contesto della registrazione di realtà aumentata?",
+                "correctAnswer": "La posizione della camera nello spazio 3D",
+                "otherAnswers": [
+                    "La posizione degli oggetti virtuali nello schermo",
+                    "La scala dei parametri della fotocamera",
+                    "La risoluzione delle immagini acquisite"
+                ]
+            },
+            {
+                "question": "Qual è il principale vantaggio dei marcatori espliciti nell'AR?",
+                "correctAnswer": "Permettono di calcolare posizione ed orientamento con buona precisione",
+                "otherAnswers": [
+                    "Possono essere facilmente modificati dall'utente",
+                    "Non richiedono la calibrazione della fotocamera",
+                    "Sono meno visibili nell'ambiente reale"
+                ]
+            },
+            {
+                "question": "Cosa rappresenta un’omografia nel contesto della realtà aumentata?",
+                "correctAnswer": "Una relazione tra punti di due spazi in cui ogni punto di uno spazio corrisponde a uno ed uno solo dell’altro spazio",
+                "otherAnswers": [
+                    "La trasformazione di immagini da colori a bianco e nero",
+                    "Il calcolo della risoluzione delle immagini",
+                    "Una tecnica per migliorare la qualità dell'immagine"
+                ]
+            },
+            {
+                "question": "Qual è uno dei problemi principali delle tecniche inerziali per il tracking in realtà aumentata?",
+                "correctAnswer": "L’accumulo di errori nel tempo, noto come drift",
+                "otherAnswers": [
+                    "La necessità di marcatori visibili",
+                    "L’uso di segnale radio per la registrazione",
+                    "La difficoltà nel riconoscere oggetti in movimento"
+                ]
+            },
+            {
+                "question": "Qual è uno degli obiettivi principali della realtà aumentata (AR)?",
+                "correctAnswer": "Integrare elementi virtuali con il mondo reale in tempo reale",
+                "otherAnswers": [
+                    "Sostituire completamente il mondo reale con uno virtuale",
+                    "Creare giochi interattivi completamente virtuali",
+                    "Migliorare esclusivamente l'industria cinematografica"
+                ]
+            },
+            {
+                "question": "Quale tecnologia è comunemente utilizzata per il riconoscimento di immagini in AR?",
+                "correctAnswer": "Computer vision",
+                "otherAnswers": [
+                    "Intelligenza artificiale",
+                    "Sensori di temperatura",
+                    "Fotocamere a infrarossi"
+                ]
+            },
+            {
+                "question": "Cosa significa 'tracking' nel contesto della realtà aumentata?",
+                "correctAnswer": "Il processo di rilevamento della posizione e dell'orientamento di un oggetto o utente",
+                "otherAnswers": [
+                    "La memorizzazione dei dati dell'utente",
+                    "La visualizzazione di contenuti virtuali",
+                    "La calibrazione dei sensori"
+                ]
+            },
+            {
+                "question": "Qual è una delle sfide principali nel creare esperienze AR accurate e realistiche?",
+                "correctAnswer": "Sincronizzare perfettamente gli oggetti virtuali con l'ambiente reale",
+                "otherAnswers": [
+                    "Creare contenuti 3D",
+                    "Distribuire l'applicazione su vari dispositivi",
+                    "Utilizzare sensori di alta qualità"
+                ]
+            },
+            {
+                "question": "Quale dei seguenti è un componente essenziale per un sistema di realtà aumentata?",
+                "correctAnswer": "Un dispositivo di visualizzazione come uno smartphone o un visore AR",
+                "otherAnswers": [
+                    "Un telecomando",
+                    "Un proiettore",
+                    "Un sistema di raffreddamento"
+                ]
+            },
+            {
+                "question": "Qual è la funzione dei sensori inerziali in un sistema AR?",
+                "correctAnswer": "Rilevare il movimento e l'orientamento del dispositivo",
+                "otherAnswers": [
+                    "Misurare la temperatura dell'ambiente",
+                    "Calcolare la profondità delle immagini",
+                    "Rilevare il colore degli oggetti"
+                ]
+            },
+            {
+                "question": "Come viene comunemente utilizzata la tecnologia GPS in applicazioni AR?",
+                "correctAnswer": "Per fornire dati di localizzazione geografica",
+                "otherAnswers": [
+                    "Per migliorare la qualità delle immagini",
+                    "Per rilevare oggetti in movimento",
+                    "Per calibrare i sensori"
+                ]
+            },
+            {
+                "question": "Quale metodo è spesso utilizzato per migliorare la precisione del tracking in AR?",
+                "correctAnswer": "L'utilizzo di marker visivi",
+                "otherAnswers": [
+                    "Aumentare la risoluzione della fotocamera",
+                    "Ridurre la velocità di elaborazione",
+                    "Utilizzare sensori di temperatura"
+                ]
+            },
+            {
+                "question": "Quale tipo di interazione è tipicamente supportata dalle applicazioni di realtà aumentata?",
+                "correctAnswer": "Interazione basata su gesti",
+                "otherAnswers": [
+                    "Interazione vocale unicamente",
+                    "Interazione tramite tastiera",
+                    "Interazione mediante impulsi elettrici"
+                ]
+            },
+            {
+                "question": "Qual è un vantaggio dell'uso della realtà aumentata nel campo dell'istruzione?",
+                "correctAnswer": "Fornire esperienze di apprendimento immersive e interattive",
+                "otherAnswers": [
+                    "Ridurre i costi di produzione di materiali didattici",
+                    "Eliminare completamente l'uso di libri di testo",
+                    "Permettere agli studenti di giocare durante le lezioni"
+                ]
+            },
+            {
+                "question": "Come vengono utilizzati i dati della fotocamera nelle applicazioni AR?",
+                "correctAnswer": "Per rilevare e tracciare oggetti e ambienti reali",
+                "otherAnswers": [
+                    "Per aumentare la memoria del dispositivo",
+                    "Per migliorare la velocità di calcolo",
+                    "Per ridurre il consumo energetico"
+                ]
+            },
+            {
+                "question": "Qual è un esempio di applicazione pratica della realtà aumentata nel settore sanitario?",
+                "correctAnswer": "Fornire assistenza durante interventi chirurgici",
+                "otherAnswers": [
+                    "Creare giochi terapeutici",
+                    "Monitorare la dieta dei pazienti",
+                    "Gestire le cartelle cliniche"
+                ]
+            },
+            {
+                "question": "Quale dei seguenti non è un uso comune della realtà aumentata (AR)?",
+                "correctAnswer": "Aumentare il calore generato dai dispositivi elettronici",
+                "otherAnswers": [
+                    "Migliorare l'istruzione con contenuti interattivi",
+                    "Fornire assistenza tecnica remota",
+                    "Creare esperienze di marketing coinvolgenti"
+                ]
+            },
+            {
+                "question": "Cosa rappresenta il termine 'registration' nel contesto dell'AR?",
+                "correctAnswer": "L'allineamento preciso di oggetti virtuali con l'ambiente reale",
+                "otherAnswers": [
+                    "La registrazione di nuovi utenti nell'applicazione",
+                    "La memorizzazione dei dati di tracciamento",
+                    "L'aggiornamento del software di AR"
+                ]
+            },
+            {
+                "question": "Quale dei seguenti è un esempio di sensore di profondità utilizzato in AR?",
+                "correctAnswer": "Lidar",
+                "otherAnswers": [
+                    "Microfono",
+                    "Termometro",
+                    "Accelerometro"
+                ]
+            },
+            {
+                "question": "Perché è importante la calibrazione dei sensori in un sistema di AR?",
+                "correctAnswer": "Per garantire la precisione dei dati di tracciamento e l'allineamento degli oggetti virtuali",
+                "otherAnswers": [
+                    "Per migliorare la qualità audio dell'applicazione",
+                    "Per aumentare la durata della batteria del dispositivo",
+                    "Per ridurre le dimensioni dell'applicazione"
+                ]
+            },
+            {
+                "question": "Qual è una delle principali sfide nella realizzazione di esperienze AR per dispositivi mobili?",
+                "correctAnswer": "Limitazioni delle risorse di calcolo e della durata della batteria",
+                "otherAnswers": [
+                    "La mancanza di fotocamere sui dispositivi mobili",
+                    "L'impossibilità di connettersi a internet",
+                    "L'assenza di schermi a colori"
+                ]
+            },
+            {
+                "question": "Quale tecnica di AR utilizza punti caratteristici dell'ambiente per il tracciamento?",
+                "correctAnswer": "Feature-based tracking",
+                "otherAnswers": [
+                    "Markerless tracking",
+                    "Template matching",
+                    "Optical flow"
+                ]
+            },
+            {
+                "question": "Come può la realtà aumentata migliorare le operazioni di manutenzione industriale?",
+                "correctAnswer": "Fornendo istruzioni visive in tempo reale sovrapposte agli impianti",
+                "otherAnswers": [
+                    "Riducendo il numero di tecnici necessari",
+                    "Eliminando completamente la necessità di formazione",
+                    "Automatizzando tutti i processi di manutenzione"
+                ]
+            },
+            {
+                "question": "Qual è uno degli obiettivi del 'marker-based tracking' in AR?",
+                "correctAnswer": "Utilizzare marcatori fisici per aiutare il sistema a rilevare la posizione della fotocamera",
+                "otherAnswers": [
+                    "Rilevare automaticamente oggetti senza l'uso di marcatori",
+                    "Monitorare la salute degli utenti",
+                    "Fornire contenuti audio di alta qualità"
+                ]
+            },
+            {
+                "question": "Cosa si intende per 'drift' nelle tecniche di tracciamento inerziale?",
+                "correctAnswer": "L'accumulo di errori nel tempo che porta a una perdita di precisione",
+                "otherAnswers": [
+                    "L'instabilità del segnale GPS",
+                    "L'incoerenza nei dati delle fotocamere",
+                    "La mancanza di calibrazione dei sensori"
+                ]
+            },
+            {
+                "question": "Quale è un'applicazione comune della realtà aumentata nel settore retail?",
+                "correctAnswer": "Visualizzazione di prodotti virtuali nel contesto reale del cliente",
+                "otherAnswers": [
+                    "Misurazione della temperatura degli acquirenti",
+                    "Miglioramento della sicurezza del negozio",
+                    "Gestione automatica delle scorte"
+                ]
+            },
+            {
+                "question": "Qual è il ruolo della computer vision nelle applicazioni di realtà aumentata?",
+                "correctAnswer": "Analizzare e interpretare le immagini catturate per sovrapporre gli oggetti virtuali",
+                "otherAnswers": [
+                    "Aumentare la velocità del processore del dispositivo",
+                    "Ridurre il consumo di energia",
+                    "Memorizzare i dati degli utenti"
+                ]
+            },
+            {
+                "question": "Quale approccio AR non richiede marcatori fisici per funzionare?",
+                "correctAnswer": "Markerless tracking",
+                "otherAnswers": [
+                    "Marker-based tracking",
+                    "Template-based tracking",
+                    "Projection-based tracking"
+                ]
+            },
+            {
+                "question": "In che modo la realtà aumentata può essere utilizzata nell'educazione medica?",
+                "correctAnswer": "Simulando procedure chirurgiche complesse per l'addestramento degli studenti",
+                "otherAnswers": [
+                    "Fornendo ricette per una dieta sana",
+                    "Monitorando i segni vitali dei pazienti",
+                    "Progettando nuovi dispositivi medici"
+                ]
+            }
+        ];
+        
+        shuffle(questionsData);
+
+        let correctCount = 0;
+        let incorrectCount = 0;
+        let unansweredCount = questionsData.length;
+
+        updateCounters();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const questionsContainer = document.getElementById('questions');
+            let qIndex = 1;
+
+            questionsData.forEach((quiz, index) => {
+                const questionContainer = document.createElement('div');
+                questionContainer.classList.add('question-container');
+
+                const questionText = document.createElement('p');
+                questionText.classList.add('question');
+                questionText.textContent = (qIndex++) + ". " + quiz.question;
+                questionText.style.marginBottom = '20px';
+                questionContainer.appendChild(questionText);
+
+                const answersContainer = document.createElement('div');
+                answersContainer.classList.add('answers');
+
+                const answers = [quiz.correctAnswer, ...quiz.otherAnswers];
+                shuffleArray(answers);
+
+                answers.forEach(answer => {
+                    const answerButton = document.createElement('button');
+                    answerButton.textContent = answer;
+                    answerButton.addEventListener('click', () => {
+                        if (answer === quiz.correctAnswer) {
+                            answerButton.classList.add('correct');
+                            correctCount++;
+                        } else {
+                            answerButton.classList.add('incorrect');
+                            revealCorrectAnswer(answersContainer, quiz.correctAnswer);
+                            incorrectCount++;
+                        }
+                        disableAllButtons(answersContainer);
+                        unansweredCount--;
+                        updateCounters();
+                    });
+                    answersContainer.appendChild(answerButton);
+                });
+
+                questionContainer.appendChild(answersContainer);
+                questionsContainer.appendChild(questionContainer);
+            });
+        });
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function disableAllButtons(container) {
+            const buttons = container.querySelectorAll('button');
+            buttons.forEach(button => button.disabled = true);
+        }
+
+        function revealCorrectAnswer(container, correctAnswer) {
+            const buttons = container.querySelectorAll('button');
+            buttons.forEach(button => {
+                if (button.textContent === correctAnswer) {
+                    button.classList.add('correct');
+                }
+            });
+        }
+
+        function shuffle(array) {
+            let currentIndex = array.length;
+            while (currentIndex != 0) {
+                let randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]];
+            }
+        }
+
+        function updateCounters() {
+            document.getElementById('correct-answers').textContent = correctCount;
+            document.getElementById('incorrect-answers').textContent = incorrectCount;
+            document.getElementById('unanswered-questions').textContent = unansweredCount;
+            document.getElementById('total-questions').textContent = questionsData.length;
+        }
+    </script>
+</body>
+
+</html>
