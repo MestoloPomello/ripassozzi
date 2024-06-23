@@ -1,0 +1,472 @@
+{
+  "quiz": [
+    {
+      "domanda": "Nowadays, the usage of classical feature extraction and data analysis methods is outdated since the capability of the recent deep learning models and methods made them obsolete and not more present in the common practice",
+      "opzioni": ["True", "False"],
+      "risposta": "False"
+    },
+    {
+      "domanda": "Artificial Intelligence can be applied to the following sectors",
+      "opzioni": ["Robotics", "Information Extraction", "All the above"],
+      "risposta": "All the above"
+    },
+    {
+      "domanda": "Artificial neural networks are capable to learn human biases",
+      "opzioni": [
+        "False: the achievable complexity of the artificial neural networks is so far from the complexity of the human brain to make impossible to mimic this characteristic",
+        "False: human biases are not reproducible nor measurable",
+        "True"
+      ],
+      "risposta": "True"
+    },
+    {
+      "domanda": "Recent artificial intelligence models can solve analogy puzzles",
+      "opzioni": ["False", "True"],
+      "risposta": "True"
+    },
+    {
+      "domanda": "Considering the “Data knowledge spectrum plot” discussed in class, the minimum amount of data required is in the following case.",
+      "opzioni": [
+        "No knowledge about the model generating the data is available",
+        "A statistical model of the process is available",
+        "A mathematical model of the process is available"
+      ],
+      "risposta": "A mathematical model of the process is available"
+    },
+    {
+      "domanda": "It is possible to think to the single datum in input to the neural network as a point in the “input space” of the model, even if the input is a single value, a N dimensional vector, or an image",
+      "opzioni": ["True", "False"],
+      "risposta": "True"
+    },
+    {
+      "domanda": "It is correct to say the one of the key features of an intelligent artificial system is the capability to learn (even if only a limited sense) and/or get better in time",
+      "opzioni": ["True", "False"],
+      "risposta": "True"
+    },
+    {
+      "domanda": "According to the Andries Engelbrecht definition of Computational intelligence what of the following is not included?",
+      "opzioni": [
+        "Artificial Neural Networks",
+        "Evolutionary Computing",
+        "Swarm Intelligence",
+        "Artificial immune system",
+        "Fuzzy Systems",
+        "All the above are included"
+      ],
+      "risposta": "All the above are included"
+    },
+    {
+      "domanda": "According to the class discussion of the Gestalt capability, what of the following sentences is more correct?",
+      "opzioni": [
+        "The Gestalt capability is a typical feature present by-design in the model of classical neural networks",
+        "The Gestalt capability is a typical feature present by-design in the model of deep learning neural networks",
+        "The Gestalt capability is a typical human feature not well (yet) mimicked in current artificial networks"
+      ],
+      "risposta": "The Gestalt capability is a typical human feature not well (yet) mimicked in current artificial networks"
+    },
+    {
+      "domanda": "The following activity: Data Selection, Data Filtering, Data Enhancing",
+      "opzioni": [
+        "Are part of the job of the artificial intelligent specialist in normal activities",
+        "Contribute to keep lower the complexity of the learning task",
+        "All the above",
+        "Are part of the classical machine learning approaches and they are (correctly)"
+      ],
+      "risposta": "All the above"
+    },
+    {
+      "domanda": "The Mean Squared Error is typically present in what step of the design",
+      "opzioni": ["Representation", "Evaluation"],
+      "risposta": "Evaluation"
+    },
+    {
+      "domanda": "Considering IoT devices as source of data for external intelligent systems (IS is not intended to be embedded into the IoT device), what kind of IoT devices can be really used?",
+      "opzioni": [
+        "Passive data IoT devices",
+        "Active data IoT devices",
+        "Dynamic data IoT devices",
+        "All of the above",
+        "None of the above"
+      ],
+      "risposta": "All of the above"
+    },
+    {
+      "domanda": "Referring to the class discussion, the (correct) design practice for neural networks considers",
+      "opzioni": [
+        "Start with deep learning models since they are the cutting edge and most advanced technology that we have now",
+        "Start with deep learning models since they are the cutting edge and most advanced technology we have now, and then use classicals method as reference",
+        "Start with simple neural networks before to consider deep learning models"
+      ],
+      "risposta": "Start with simple neural networks before to consider deep learning models"
+    },
+    {
+      "domanda": "The missing values can also be occupied by computing mean, mode or median of the observed given values.",
+      "opzioni": [
+        "This is very unusual and not common in practice",
+        "This is a very simple and effective solution in case the learning method is not capable to deal with missing data",
+        "This is not possible, since that is just descriptive statistics about the features, and cannot be used to fill missing data"
+      ],
+      "risposta": "This is a very simple and effective solution in case the learning method is not capable to deal with missing data"
+    },
+    {
+      "domanda": "Referring to the class discussion on data leakage what is the worst situation?",
+      "opzioni": [
+        "The unwanted leakage of data from test dataset to training data set",
+        "The unwanted leakage of data from training dataset to test data set",
+        "None of the above since transferring data from test and/or training dataset is normal when the accuracy of the model is tested"
+      ],
+      "risposta": "The unwanted leakage of data from test dataset to training data set"
+    },
+    {
+      "domanda": "An additional information can allow the model to learn or know something that it otherwise would not know and in turn invalidate the estimated performance of the model being constructed. This is called",
+      "opzioni": [
+        "Data leakage",
+        "Data pre-processing",
+        "Data harmonization",
+        "Data wrangling"
+      ],
+      "risposta": "Data leakage"
+    },
+    {
+      "domanda": "The degrees of freedom for a given problem are the number of independent problem variables which must be specified to uniquely determine a solution. Hence the #DoF is important to be considered",
+      "opzioni": [
+        "To design the number of vectors in the learning dataset.",
+        "To avoid overfitting problem in the model",
+        "All the above",
+        "None of the above"
+      ],
+      "risposta": "All the above"
+    },
+    {
+      "domanda": "About the cosine metrics it is possible to say that",
+      "opzioni": [
+        "Two vectors with the same orientation have a cosine similarity of 1",
+        "Two vectors oriented at 90° relative to each other have a similarity of 0",
+        "All of the above",
+        "None of the above"
+      ],
+      "risposta": "All of the above"
+    },
+    {
+      "domanda": "What similarity feature/features discussed in class offers/offer the property to allow a fast comparison based on a short 1D vector of elements or bits",
+      "opzioni": ["phash", "ahash", "All the above", "Cross-correlation"],
+      "risposta": "All the above"
+    },
+    {
+      "domanda": "In agreement to the class discussion, which description better describes the design activity?",
+      "opzioni": [
+        "Similarity in the dataset requires more space and processing time",
+        "Similarity in the dataset can improve generalization",
+        "Both of the above",
+        "None of the above"
+      ],
+      "risposta": "Both of the above"
+    },
+    {
+      "domanda": "In agreement to the class discussion, in a dataset of 1100 labelled images, the search for duplications is typically achieved...",
+      "opzioni": [
+        "by manual exploration of the dataset for better results since the number of images is not critical",
+        "by automatic iterations"
+      ],
+      "risposta": "by automatic iterations"
+    },
+    {
+      "domanda": "In agreement to the class discussion, what kind of labelling error is generally the worst case for the accuracy of the generalization of the model? ERR1 = Duplications with same labels EER2 = Duplications with different labels",
+      "opzioni": ["ERR1", "ERR2", "ERR1 = EER2"],
+      "risposta": "ERR2"
+    },
+    {
+      "domanda": "According to the class discussion, about the relationship between the operation of cross-correlation and convolution it is possible to say that",
+      "opzioni": [
+        "They are very similar in meaning and mathematical expression",
+        "Despite the mathematical expression is similar, the meaning and their use is completely different",
+        "There is no specific relationship since they are different in meaning and mathematical expressions"
+      ],
+      "risposta": "They are very similar in meaning and mathematical expression"
+    },
+    {
+      "domanda": "According to the class discussion, what is the characteristic of the self-correlation (O = xcor2(A,A)) map produced by a generic image?",
+      "opzioni": [
+        "A flat and noisy central plateau",
+        "An evident spike at the center with a very well-defined maximum",
+        "It is not possible to create an autocorrelation map from one single images, two different images are needed"
+      ],
+      "risposta": "An evident spike at the center with a very well-defined maximum"
+    },
+    {
+      "domanda": "If your data set contains extreme outliers, it better to use as preprocessing",
+      "opzioni": ["Feature clipping", "Min-max normalization", "Z’ norm"],
+      "risposta": "Feature clipping"
+    },
+    {
+      "domanda": "A logarithmic scaling to one feature values is typically applied in a case of",
+      "opzioni": ["Outliers’ presence", "Negative values", "A very large range in the values (>0)"],
+      "risposta": "A very large range in the values (>0)"
+    },
+    {
+      "domanda": "According to the scientific visualization rules presented in class, if you are plotting many figures of merit obtained by your trained neural network on a new dataset,  which is the correct ranking of visual attributes to be used? Left: low accuracy Right: HIGH ACCURACY",
+      "opzioni": ["Color intensity > Hue > Length", "Area > Length > Hue", "Slope > Angle > Volume", "Hue > Area > Length"],
+      "risposta": "Hue > Area > Length"
+    },
+    {
+      "domanda": "According to the scientific visualization rules presented in class, is it possible to plot a graphical representation of the confidence level of your figures of merit of your trained model?",
+      "opzioni": ["No, it is a statistical index with different units and meaning and hence cannot be represented in the same plot", "Yes, the confidence interval data have the same units and meaning, and they can be represented in the same plot"],
+      "risposta": "Yes, the confidence interval data have the same units and meaning, and they can be represented in the same plot"
+    },
+    {
+      "domanda": "According to the discussion presented in class about the data visualization, and considering the following steps of the design workflow 1) Get Data, 2) Clean Manipulate Data, 3) Train models, 4) Test Data, 5) Improve the design, which are the main step/steps where data visualization should be involved?",
+      "opzioni": ["#1", "#5", "#1 and #5", "#2, #3 and #5"],
+      "risposta": "#2, #3 and #5"
+    },
+    {
+      "domanda": "According to the discussion presented in class about the similarity, consider an image A(x, y) with internal similarity (repetitions of patterns). What happens to the output of the self-cross correlation (O = xcorr2(2, 2))",
+      "opzioni": ["It is not possible to apply the cross correlation to the same image", "Output O tends to be a flat plateau with one clear central peak", "Output O tends to have many peaks and one evident maximum", "Output O tends to have many equivalent peaks with the same maximum value"],
+      "risposta": "Output O tends to have many peaks and one evident maximum"
+    },
+    {
+      "domanda": "The design of intelligent systems for Industry 4.0 applications should be compliant to the following main design principles.",
+      "opzioni": ["Interoperability, Information transparency, Improved technical assistance", "Interoperability, Information transparency, Improved technical assistance, Wireless connectivity", "Interoperability, Information transparency, Improved technical assistance, Decentralized decisions", "Interoperability, Information transparency, Decentralized decisions"],
+      "risposta": "Interoperability, Information transparency, Improved technical assistance, Decentralized decisions"
+    },
+    {
+      "domanda": "Machine Learning on CPUs offer the following advantages",
+      "opzioni": ["Ease of portability and use-case flexibility, Market availability at different performance and prices", "Ease of portability and use-case flexibility, Market availability at different performance and prices, Deployment across a wide spectrum of devices", "Ease of portability and use-case flexibility, Deployment across a wide spectrum of devices", "Market availability at different performance and prices, Deployment across a wide spectrum of devices"],
+      "risposta": "Ease of portability and use-case flexibility, Market availability at different performance and prices, Deployment across a wide spectrum of devices"
+    },
+    {
+      "domanda": "The GoogLeNet deep learning pretrained model discussed during the course is model for",
+      "opzioni": ["Post processing", "None of the other options", "Image Enhancing", "Image classification", "Segmentation"],
+      "risposta": "Image classification"
+    },
+    {
+      "domanda": "According to the class discussion, text prefiltering is often used as input for a neural network to deal with a large text input making the networks able to classifiy the input",
+      "opzioni": ["True, using the hamming distance as prefilering", "True, using the cosine distance as prefilering", "True, using the string approximate match distance as prefilering", "True, using the discrete gradient descent as prefilering", "True, using the so-called “word embeddings” technique"],
+      "risposta": "True, using the so-called “word embeddings” technique"
+    },
+    {
+      "domanda": "The Inception-v3 deep learning pretrained model discussed during the course is a model for",
+      "opzioni": ["Post processing", "None of the other options", "Image Enhancing", "Image classification", "Segmentation"],
+      "risposta": "Image classification"
+    },
+    {
+      "domanda": "Intelligent vision systems can achieve Semantic segmentation by",
+      "opzioni": ["A hybrid approach by blob detection to select candidate ROIs and then image classification of the ROIs", "A complete fully convolutional solution", "A hybrid approach by blob detection to select candidate ROIs and then image segmentation of the ROIs", "None of the other options"],
+      "risposta": "A complete fully convolutional solution"
+    },
+    {
+      "domanda": "An AI model is processing an input RGB image to evaluate the age expressed in years of the face present in the image. What kind of model is it?",
+      "opzioni": ["Classifier Model", "Regressor Model", "Clustering Model", "Reinforced Learning Model", "None of the above"],
+      "risposta": "Regressor Model"
+    },
+    {
+      "domanda": "Acoording to class discussion, the theory of intelligent systems should include the following designing steps:",
+      "opzioni": ["Representation", "Representation, Evaluation", "Representation, Evauation, Optimization", "None of the other option"],
+      "risposta": "Representation, Evauation, Optimization"
+    },
+    {
+      "domanda": "Clustering always requires supervised dataset",
+      "opzioni": ["Yes", "No"],
+      "risposta": "No"
+    },
+    {
+      "domanda": "Acoording to class discussion, using a black box solution is:",
+      "opzioni": ["Bad practice for a ML designer", "Can be used under specific circumstances", "Since all state of the art models tend to be quite large and un-explainable, it is current good practice to adopt black box approach since you get the best models"],
+      "risposta": "Can be used under specific circumstances"
+    },
+    {
+      "domanda": "You have a dataset X of 1000 samples and number of features F = 4 features. You want to reduce the number of features F to 2 for data visualization. According to the goal, consider the following options. \n OPTION A: Apply PCA to X and select only the first 2 Principal Components. \n OPTION B: Apply the Feedforward Feature Selection to X and select only the first 2 more relevant features.",
+      "opzioni": ["Option A is NOT possible. Option B is NOT possible", "Option A is NOT possible. Option B is possible", "Option A is possible. Option B is possible.", "Option A is possible. Option B is NOT possible."],
+      "risposta": "Option A is possible. Option B is possible."
+    },
+    {
+      "domanda": "You have a feature in your dataset with the following values F1 = [-5, 0, +5], which normalization will give you the following F1_norm = [0, 0.5, 1",
+      "opzioni": ["Z-score", "Clipping", "Min-MAX", "A different type of normalization"],
+      "risposta": "Min-MAX"
+    },
+    {
+      "domanda": "According to the class discussion, in general for a given small dataset X, if you train a feed-forward neural models (of the same type) with an increasing number of neurons, which case is more probable?",
+      "opzioni": ["None of the below", "The training error and the validation will decrease indefinitely", "The training error will increase", "The validation error will decrease indefinitely"],
+      "risposta": "None of the below"
+    },
+    {
+      "domanda": "According to the class discussion, in a cross-validation single test, which train/test partition of the samples will provide the lower training error but the lower confidence in the test results?",
+      "opzioni": ["Training set = 99%, Test Set = 01%", "Training set = 75%, Test Set = 25%", "Training set = 50%, Test Set = 50%", "Training set = 25%, Test Set = 75%", "Training set = 01%, Test Set = 99%"],
+      "risposta": "Training set = 99%, Test Set = 01%"
+    },
+    {
+      "domanda": "According to the class discussion, what kind of activity can be performed on the test set?",
+      "opzioni": ["All the below", "Mean test error estimation", "Mean test error estimation and standard deviation", "Confusion matrix test"],
+      "risposta": "All the below"
+    },
+    {
+      "domanda": "According to the class discussion, what kind of activity can be performed on the train set?",
+      "opzioni": ["Design of the #of neurons", "Design of the #of layers", "Normalization", "PCA" , "All the other options"],
+      "risposta": "All the other options"
+    },
+    {
+      "domanda": "According to the class discussion, where can be performed the feature engineering?",
+      "opzioni": ["Only on the test set", "On the train set and the test set", "Not on the train, not on the test set, but only on a different dataset", "Only on the train set"],
+      "risposta": "Only on the train set"
+    },
+    {
+      "domanda": "A simple k-Fold Cross Validation procedure may",
+      "opzioni": ["Making impossible to process the test error", "Get stuck into one the local minima", "Lead to disarranging the proportion of examples from each class in the test partitions", "Produce severe overfitting", "None of the other answers"],
+      "risposta": "Lead to disarranging the proportion of examples from each class in the test partitions"
+    },
+    {
+      "domanda": "Which option is correct?",
+      "opzioni": ["From the confusion matrix is possible to process the classification error and vice versa", "The confusion matrix is applicable only to binary classification systems", "From the confusion matrix is possible to process the classification error", "The classification error is equal to the sum of the diagonal elements of the confusion matrix"],
+      "risposta": "From the confusion matrix is possible to process the classification error"
+    },
+    {
+      "domanda": "According to the notation used in class, which kind of a model is described by the equation f(x) = sgn(w ∙ x + b)",
+      "opzioni": ["Liner regressor", "Soft-max neuron", "Sigmoidal neuron", "Liner classifier", "Gradient descent formula", "Number of the model’s parameters"],
+      "risposta": "Liner classifier"
+    },
+    {
+      "domanda": "According to the notation used in class, which kind of a classifier is better described by the following definition: “the output is the label produced by the most probable classifier”",
+      "opzioni": ["Supervised Classifier", "K-means", "Bayes Optimal Classifier", "None of the other options"],
+      "risposta": "Bayes Optimal Classifier"
+    },
+    {
+      "domanda": "According to the class discussion the kNN classifier, what kind of learning is it?",
+      "opzioni": ["Instance-based Learning", "Eager Learning", "Hard-limited Learning", "Unsupervised Clustering", "None of the other options"],
+      "risposta": "Instance-based Learning"
+    },
+    {
+      "domanda": "According to the class discussion, what is the classifier with the following properties: not based on neural techniques; it’s deterministic with no random initialization; perfect repeatability; a minimum number of parameters is needed; learning is very simple but effective; perfect explain ability",
+      "opzioni": ["Linear classifier", "Decision Tree", "kNN", "K-means", "None of the other options"],
+      "risposta": "kNN"
+    },
+    {
+      "domanda": "According to the class discussion on kNN classifiers about the k parameter and its relationship to regularization of the decision boundaries and the computational complexity, what is the correct option about larger values of k?",
+      "opzioni": ["Less regularization and more complexity", "More regularization and more complexity", "Less regularization and less complexity", "More regularization and less complexity", "The parameter k is not related to regularization and complexity"],
+      "risposta": "More regularization and more complexity"
+    },
+    {
+      "domanda": "According to the class discussion on PCA what is the correct option?",
+      "opzioni": ["PCA vectors are originating from the center of mass of the points", "All subsequent principal component vectors are orthogonal", "All the other options"],
+      "risposta": "All the other options"
+    },
+    {
+      "domanda": "According to the class discussion on PCA what is the correct option?",
+      "opzioni": ["All subsequent principal component vectors are orthogonal", "The variance of the data projection on the first PCA vectors is maximized", "All the other options"],
+      "risposta": "All the other options"
+    },
+    {
+      "domanda": "According to the class discussion about unsupervised learning, what is the method with the following properties: you need to specify the number of clusters k in advance, is unable to handle noisy data and outliers, it is not suitable to discover clusters with non-convex shapes",
+      "opzioni": ["K-means", "kNN", "Decision tree", "None of the other options"],
+      "risposta": "K-means"
+    },
+    {
+      "domanda": "According to the class discussion, considering the equation of the backpropagation in a feedforward neural network of weight w_ij connected to the following output neuron k, which is the missing term? DELTAW_ij = ? ∗ y_j ∗ delta_k",
+      "opzioni": ["??? = x_j (the input vector)", "??? = alfa (the regularization term > 1)", "??? = alfa (the regularization term < 1)", "??? = x_j (the input vector error)"],
+      "risposta": "??? = alfa (the regularization term < 1)"
+    },
+    {
+      "domanda": "According to the class discussion, considering a general CNN architecture, what is the sequence of modules which is more likely",
+      "opzioni": ["Input layer → Relu → Convolution → Max Pooling → Softmax → Output layer", "Input layer → Relu → Max Pooling → Softmax → Convolution → Output layer ahash", "Input layer → Relu → Max Pooling → Convolution → Softmax → Output layer", "Input layer → Convolution → Relu → Max Pooling → Softmax → Output layer"],
+      "risposta": "Input layer → Convolution → Relu → Max Pooling → Softmax → Output layer"
+    },
+    {
+      "domanda": "According to the class discussion, considering a standard intelligent vision system, which capability can be processed onboard on a recent smart industrial camera?",
+      "opzioni": ["Segmentation", "Segmentation, Measurement", "Segmentation, Measurement, Classification with trained non-deep models", "Segmentation, Measurement, Classification with trained deep models", "Segmentation, Measurement, Classification with trained deep models and training of deep models"],
+      "risposta": "Segmentation, Measurement, Classification with trained deep models"
+    },
+    {
+      "domanda": "According to the class discussion, Traditional Segmentation methods are quite useful to produce blobs or object candidates to be further processed by deep models for classification or measurements. Traditional Segmentation methods can be partitioned in",
+      "opzioni": ["Global knowledge, Edge-based", "Edge-based, Region-based", "Global knowledge, Edge-based, Region-based", "None of the other options"],
+      "risposta": "Global knowledge, Edge-based, Region-based"
+    },
+    {
+      "domanda": "According to the class discussion referred to edge computing, is it possible to process images with trained deep learning models on external small, dedicated devices connect via USB connection?",
+      "opzioni": ["True: the usage of dedicated processors and the USB bandwidth make this option possible", "False: the USB bandwidth make this option not possible", "False: the needed computational complexity needed to run trained deep learning models make this option not possible", "False: the bandwidth and the computational complexity need to process images with trained deep learning model is not adequate"],
+      "risposta": "True: the usage of dedicated processors and the USB bandwidth make this option possible"
+    },
+    {
+      "domanda": "According to the class discussion what is Greedy Layer-Wise Training?",
+      "opzioni": ["A supervised training step to improve auto-encoders", "A supervised training step to classical feedforward networks", "An unsupervised training step to classical feedforward networks", "An unsupervised training step to improve auto-encoders"],
+      "risposta": "An unsupervised training step to improve auto-encoders"
+    },
+    {
+      "domanda": "According to the scientific visualization rules presented in class, is it possible to plot a graphical representation of the confidence level of one single figure of merit (like the accuracy) of your trained model?",
+      "opzioni": ["Yes, the confidence interval data have different units and meaning but they can be represented in the same plot using different visual attributes like \"slope\" and \"area\"", "No, it is a statistical index with different units and meaning and hence cannot be represented in the same plot"],
+      "risposta": "Yes, the confidence interval data have different units and meaning but they can be represented in the same plot using different visual attributes like \"slope\" and \"area\""
+    },
+    {
+      "domanda": "The number of parameters to be fixed during a complete training in a deep learning model like the VGGNet presented in the course is about",
+      "opzioni": ["< 100000", "> 100 Million", "about 1 Million", "about 10 Million"],
+      "risposta": "> 100 Million"
+    },
+    {
+      "domanda": "Considering the class discussing about the basic metrics in data similarity, given a vector A, vector B, a real number alpha, and the cosine metrics cos(A,B) it is possible to say that",
+      "opzioni": ["alpha * cos(A,B) = cos(alpha*A, B)", "cos(A,B) = cos(alpha*A, alpha*B)", "cos(A,B) = cos(alpha*A, B) = cos(A, alpha*B)", "alpha * cos(A,B) = cos(alpha*A, alpha*B)"],
+      "risposta": "cos(A,B) = cos(alpha*A, alpha*B)"
+    },
+    {
+      "domanda": "Referring to the class discussion on data leakage what is the worst situation?",
+      "opzioni": ["The unwanted leakage of data from training dataset to test data set", "None of the other options since transferring data from test and/or training dataset is normal when the accuracy of the model is tested", "The unwanted leakage of data from test dataset to training data set since you are subtracting data to the generalization test, making the situation more pessimistic", "The unwanted leakage of data from test dataset to training data set since you are subtracting data to the generalization test, making the situation more optimistic"],
+      "risposta": "The unwanted leakage of data from test dataset to training data set since you are subtracting data to the generalization test, making the situation more optimistic"
+    },
+    {
+      "domanda": "What task of an intelligent vision system is associated to following description: split or separate an image into regions using features, patterns and colors to facilitate recognition, understanding, and Region Of Interests (ROI) processing and measurements.",
+      "opzioni": ["Model training", "Post processing", "Enhancing","Segmentation", "Feature engineering"],
+      "risposta": "Segmentation"
+    },
+    {
+      "domanda": "In agreement to the class discussion, what kind of labelling error is generally the worst case for the accuracy of the generalization of the model? ERR1 = Duplications with same labels, EER2 = Duplications with different labels",
+      "opzioni": ["ERR1 is equalt to EER2 by definition", "ERR2 is the worst case", "ERR1 is the worst case", "ERR1 is roughly equalt to EER2 in general"],
+      "risposta": "ERR2 is the worst case"
+    },
+    {
+      "domanda": "According to the class discussion, the convolution/correlation operations are of foundamental relevance for many deep learning models. What is the characteristic of the autocorrelation map produced by a generic image?",
+      "opzioni": ["It is not possible to create an autocorrelation map from one single images, two different images are needed", "None of the other options", "A flat and noisy central plateau", "An evident spike at the center with a very well defined maximum"],
+      "risposta": "An evident spike at the center with a very well defined maximum"
+    },
+    {
+      "domanda": "A tensor processing unit (TPU) is",
+      "opzioni": ["A part of a model of the Convolutional Neural Network used to process dedicated tensorial activation functions in the neurons", "An internal unit of the Arm processor architecture introduced to support 8-bit fixed-point matrix multiplication for deep learning models", "An AI accelerator application-specific integrated circuit (ASIC) and the related board developed specifically for neural network machine learning", "None of the other options"],
+      "risposta": "An AI accelerator application-specific integrated circuit (ASIC) and the related board developed specifically for neural network machine learning"
+    },
+    {
+      "domanda": "You have a feature in your dataset with the following values F2 = [ -13 0 1 2 4 128 ], which normalization will give you the following F2_norm = [0 0 1 2 4 10 ]",
+      "opzioni": ["Z-score", "Min-MAX", "Clipping", "A different type of normalization"],
+      "risposta": "Clipping"
+    },
+    {
+      "domanda": "Considering the possible Intelligent Vision tasks which is the correct option?",
+      "opzioni": ["Instance Segmentation is less complex than Object Detection", "Instance Segmentation is more complex than Object Detection", "Instance Segmentation and Object Detection have a similar complexity", "The other otpions are not Intelligent Vision tasks"],
+      "risposta": "Instance Segmentation is more complex than Object Detection"
+    },
+    {
+      "domanda": "In a given picture ImmA you see 1 car and 5 people in a city background. Considering the Intelligent systems IS processing the image ImmA and producing in output the label “humans”, what Intelligent Vision task is performing?",
+      "opzioni": ["Instance segmentation", "Object detection", "Image classification", "Semantic segmentation"],
+      "risposta": "Image classification"
+    },
+    {
+      "domanda": "According to the class discussion, considering the training of deep learning models on standard CPUs and standard commercial GPUs boards, what is the gain in training performance (time) and efficiency (energy) for a medium/large-size project?",
+      "opzioni": ["About 100x in performance and 10x in efficiency", "More than 100x in performance and more than 5x in efficiency", "About 10x in performance and 5x in efficiency", "About 2x in performance and 2x in efficiency"],
+      "risposta": "About 10x in performance and 5x in efficiency"
+    },
+    {
+      "domanda": "A basic industrial setup for Intelligent vision systems is typically composed by the following elements",
+      "opzioni": ["Standard industrial smart camera with optics, external processing HW and SW units, illumination system", "Standard industrial camera with optics, illumination system", "Just a standard industrial camera with optics", "Standard industrial camera with optics, processing HW and SW units, illumination system", "Standard industrial camera with optics, processing HW and SW units"],
+      "risposta": "Standard industrial camera with optics, processing HW and SW units, illumination system"
+    },
+    {
+      "domanda": "Acoording to class discussion, the classification item and thei decision boundaries, it is possible in general to optimize during the training/optimization step",
+      "opzioni": ["The accuracy", "The margin", "Both"],
+      "risposta": "Both"
+    },
+    {
+      "domanda": "Acoording to class discussion about AI regulation in EU, regulation approach is based on:",
+      "opzioni": ["List of use cases", "Risk assessment of the application", "Both", "None of the above"],
+      "risposta": "Both"
+    },
+    {
+      "domanda": "Acoording to the discussion presented in class, the EU regulatory framework for AI is:",
+      "opzioni": ["Mainly focused on public services", "Mainly focused on health-related applications", "Mainly focused on data privacy", "None of the other options"],
+      "risposta": "None of the other options"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MOBIDEV</title>
+    <title>IS4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -91,295 +91,702 @@
     <script>
         const questionsData = [
             {
-                "question": "Quale dei seguenti sensori è utilizzato per comprendere l'ambiente circostante nell'Augmented Reality (AR)?",
-                "correctAnswer": "Sensori di profondità",
+                "question": "Nowadays, the usage of classical feature extraction and data analysis methods is outdated since the capability of the recent deep learning models and methods made them obsolete and not more present in the common practice",
                 "otherAnswers": [
-                    "Sensori di temperatura",
-                    "Sensori di pressione",
-                    "Sensori di umidità"
-                ]
+                    "True"
+                ],
+                "correctAnswer": "False"
             },
             {
-                "question": "Quale sistema di riferimento è necessario per la conversione delle coordinate nel processo di 'registration'?",
-                "correctAnswer": "Sistema di coordinate del mondo reale e sistema di coordinate schermo",
+                "question": "Artificial Intelligence can be applied to the following sectors",
                 "otherAnswers": [
-                    "Sistema di coordinate locali e sistema di coordinate geografiche",
-                    "Sistema di coordinate polari e sistema di coordinate cilindriche",
-                    "Sistema di coordinate 3D e sistema di coordinate 2D"
-                ]
+                    "Robotics",
+                    "Information Extraction"
+                ],
+                "correctAnswer": "All the above"
             },
             {
-                "question": "Quale approccio base alla registration utilizza segnali radio come GNSS, WiFi o Bluetooth?",
-                "correctAnswer": "Approccio basato su segnale radio",
+                "question": "Artificial neural networks are capable to learn human biases",
                 "otherAnswers": [
-                    "Approccio basato su visione",
-                    "Approccio basato su sensori termici",
-                    "Approccio basato su marcatori espliciti"
-                ]
+                    "False: the achievable complexity of the artificial neural networks is so far from the complexity of the human brain to make impossible to mimic this characteristic",
+                    "False: human biases are not reproducible nor measurable"
+                ],
+                "correctAnswer": "True"
             },
             {
-                "question": "Cosa rappresenta la matrice di roto-traslazione nel contesto della registrazione di realtà aumentata?",
-                "correctAnswer": "La posizione della camera nello spazio 3D",
+                "question": "Recent artificial intelligence models can solve analogy puzzles",
                 "otherAnswers": [
-                    "La posizione degli oggetti virtuali nello schermo",
-                    "La scala dei parametri della fotocamera",
-                    "La risoluzione delle immagini acquisite"
-                ]
+                    "False"
+                ],
+                "correctAnswer": "True"
             },
             {
-                "question": "Qual è il principale vantaggio dei marcatori espliciti nell'AR?",
-                "correctAnswer": "Permettono di calcolare posizione ed orientamento con buona precisione",
+                "question": "Considering the “Data knowledge spectrum plot” discussed in class, the minimum amount of data required is in the following case.",
                 "otherAnswers": [
-                    "Possono essere facilmente modificati dall'utente",
-                    "Non richiedono la calibrazione della fotocamera",
-                    "Sono meno visibili nell'ambiente reale"
-                ]
+                    "No knowledge about the model generating the data is available",
+                    "A statistical model of the process is available"
+                ],
+                "correctAnswer": "A mathematical model of the process is available"
             },
             {
-                "question": "Cosa rappresenta un’omografia nel contesto della realtà aumentata?",
-                "correctAnswer": "Una relazione tra punti di due spazi in cui ogni punto di uno spazio corrisponde a uno ed uno solo dell’altro spazio",
+                "question": "It is possible to think to the single datum in input to the neural network as a point in the “input space” of the model, even if the input is a single value, a N dimensional vector, or an image",
                 "otherAnswers": [
-                    "La trasformazione di immagini da colori a bianco e nero",
-                    "Il calcolo della risoluzione delle immagini",
-                    "Una tecnica per migliorare la qualità dell'immagine"
-                ]
+                    "False"
+                ],
+                "correctAnswer": "True"
             },
             {
-                "question": "Qual è uno dei problemi principali delle tecniche inerziali per il tracking in realtà aumentata?",
-                "correctAnswer": "L’accumulo di errori nel tempo, noto come drift",
+                "question": "It is correct to say the one of the key features of an intelligent artificial system is the capability to learn (even if only a limited sense) and/or get better in time",
                 "otherAnswers": [
-                    "La necessità di marcatori visibili",
-                    "L’uso di segnale radio per la registrazione",
-                    "La difficoltà nel riconoscere oggetti in movimento"
-                ]
+                    "False"
+                ],
+                "correctAnswer": "True"
             },
             {
-                "question": "Qual è uno degli obiettivi principali della realtà aumentata (AR)?",
-                "correctAnswer": "Integrare elementi virtuali con il mondo reale in tempo reale",
+                "question": "According to the Andries Engelbrecht definition of Computational intelligence what of the following is not included?",
                 "otherAnswers": [
-                    "Sostituire completamente il mondo reale con uno virtuale",
-                    "Creare giochi interattivi completamente virtuali",
-                    "Migliorare esclusivamente l'industria cinematografica"
-                ]
+                    "Artificial Neural Networks",
+                    "Evolutionary Computing",
+                    "Swarm Intelligence",
+                    "Artificial immune system",
+                    "Fuzzy Systems"
+                ],
+                "correctAnswer": "All the above are included"
             },
             {
-                "question": "Quale tecnologia è comunemente utilizzata per il riconoscimento di immagini in AR?",
-                "correctAnswer": "Computer vision",
+                "question": "According to the class discussion of the Gestalt capability, what of the following sentences is more correct?",
                 "otherAnswers": [
-                    "Intelligenza artificiale",
-                    "Sensori di temperatura",
-                    "Fotocamere a infrarossi"
-                ]
+                    "The Gestalt capability is a typical feature present by-design in the model of classical neural networks",
+                    "The Gestalt capability is a typical feature present by-design in the model of deep learning neural networks"
+                ],
+                "correctAnswer": "The Gestalt capability is a typical human feature not well (yet) mimicked in current artificial networks"
             },
             {
-                "question": "Cosa significa 'tracking' nel contesto della realtà aumentata?",
-                "correctAnswer": "Il processo di rilevamento della posizione e dell'orientamento di un oggetto o utente",
+                "question": "The following activity: Data Selection, Data Filtering, Data Enhancing",
                 "otherAnswers": [
-                    "La memorizzazione dei dati dell'utente",
-                    "La visualizzazione di contenuti virtuali",
-                    "La calibrazione dei sensori"
-                ]
+                    "Are part of the job of the artificial intelligent specialist in normal activities",
+                    "Contribute to keep lower the complexity of the learning task",
+                    "Are part of the classical machine learning approaches and they are (correctly)"
+                ],
+                "correctAnswer": "All the above"
             },
             {
-                "question": "Qual è una delle sfide principali nel creare esperienze AR accurate e realistiche?",
-                "correctAnswer": "Sincronizzare perfettamente gli oggetti virtuali con l'ambiente reale",
+                "question": "The Mean Squared Error is typically present in what step of the design",
                 "otherAnswers": [
-                    "Creare contenuti 3D",
-                    "Distribuire l'applicazione su vari dispositivi",
-                    "Utilizzare sensori di alta qualità"
-                ]
+                    "Representation"
+                ],
+                "correctAnswer": "Evaluation"
             },
             {
-                "question": "Quale dei seguenti è un componente essenziale per un sistema di realtà aumentata?",
-                "correctAnswer": "Un dispositivo di visualizzazione come uno smartphone o un visore AR",
+                "question": "Considering IoT devices as source of data for external intelligent systems (IS is not intended to be embedded into the IoT device), what kind of IoT devices can be really used?",
                 "otherAnswers": [
-                    "Un telecomando",
-                    "Un proiettore",
-                    "Un sistema di raffreddamento"
-                ]
+                    "Passive data IoT devices",
+                    "Active data IoT devices",
+                    "Dynamic data IoT devices",
+                    "None of the above"
+                ],
+                "correctAnswer": "All of the above"
             },
             {
-                "question": "Qual è la funzione dei sensori inerziali in un sistema AR?",
-                "correctAnswer": "Rilevare il movimento e l'orientamento del dispositivo",
+                "question": "Referring to the class discussion, the (correct) design practice for neural networks considers",
                 "otherAnswers": [
-                    "Misurare la temperatura dell'ambiente",
-                    "Calcolare la profondità delle immagini",
-                    "Rilevare il colore degli oggetti"
-                ]
+                    "Start with deep learning models since they are the cutting edge and most advanced technology that we have now",
+                    "Start with deep learning models since they are the cutting edge and most advanced technology we have now, and then use classicals method as reference"
+                ],
+                "correctAnswer": "Start with simple neural networks before to consider deep learning models"
             },
             {
-                "question": "Come viene comunemente utilizzata la tecnologia GPS in applicazioni AR?",
-                "correctAnswer": "Per fornire dati di localizzazione geografica",
+                "question": "The missing values can also be occupied by computing mean, mode or median of the observed given values.",
                 "otherAnswers": [
-                    "Per migliorare la qualità delle immagini",
-                    "Per rilevare oggetti in movimento",
-                    "Per calibrare i sensori"
-                ]
+                    "This is very unusual and not common in practice",
+                    "This is not possible, since that is just descriptive statistics about the features, and cannot be used to fill missing data"
+                ],
+                "correctAnswer": "This is a very simple and effective solution in case the learning method is not capable to deal with missing data"
             },
             {
-                "question": "Quale metodo è spesso utilizzato per migliorare la precisione del tracking in AR?",
-                "correctAnswer": "L'utilizzo di marker visivi",
+                "question": "Referring to the class discussion on data leakage what is the worst situation?",
                 "otherAnswers": [
-                    "Aumentare la risoluzione della fotocamera",
-                    "Ridurre la velocità di elaborazione",
-                    "Utilizzare sensori di temperatura"
-                ]
+                    "The unwanted leakage of data from training dataset to test data set",
+                    "None of the above since transferring data from test and/or training dataset is normal when the accuracy of the model is tested"
+                ],
+                "correctAnswer": "The unwanted leakage of data from test dataset to training data set"
             },
             {
-                "question": "Quale tipo di interazione è tipicamente supportata dalle applicazioni di realtà aumentata?",
-                "correctAnswer": "Interazione basata su gesti",
+                "question": "An additional information can allow the model to learn or know something that it otherwise would not know and in turn invalidate the estimated performance of the model being constructed. This is called",
                 "otherAnswers": [
-                    "Interazione vocale unicamente",
-                    "Interazione tramite tastiera",
-                    "Interazione mediante impulsi elettrici"
-                ]
+                    "Data pre-processing",
+                    "Data harmonization",
+                    "Data wrangling"
+                ],
+                "correctAnswer": "Data leakage"
             },
             {
-                "question": "Qual è un vantaggio dell'uso della realtà aumentata nel campo dell'istruzione?",
-                "correctAnswer": "Fornire esperienze di apprendimento immersive e interattive",
+                "question": "The degrees of freedom for a given problem are the number of independent problem variables which must be specified to uniquely determine a solution. Hence the #DoF is important to be considered",
                 "otherAnswers": [
-                    "Ridurre i costi di produzione di materiali didattici",
-                    "Eliminare completamente l'uso di libri di testo",
-                    "Permettere agli studenti di giocare durante le lezioni"
-                ]
+                    "To design the number of vectors in the learning dataset.",
+                    "To avoid overfitting problem in the model",
+                    "None of the above"
+                ],
+                "correctAnswer": "All the above"
             },
             {
-                "question": "Come vengono utilizzati i dati della fotocamera nelle applicazioni AR?",
-                "correctAnswer": "Per rilevare e tracciare oggetti e ambienti reali",
+                "question": "About the cosine metrics it is possible to say that",
                 "otherAnswers": [
-                    "Per aumentare la memoria del dispositivo",
-                    "Per migliorare la velocità di calcolo",
-                    "Per ridurre il consumo energetico"
-                ]
+                    "Two vectors with the same orientation have a cosine similarity of 1",
+                    "Two vectors oriented at 90° relative to each other have a similarity of 0",
+                    "None of the above"
+                ],
+                "correctAnswer": "All of the above"
             },
             {
-                "question": "Qual è un esempio di applicazione pratica della realtà aumentata nel settore sanitario?",
-                "correctAnswer": "Fornire assistenza durante interventi chirurgici",
+                "question": "What similarity feature/features discussed in class offers/offer the property to allow a fast comparison based on a short 1D vector of elements or bits",
                 "otherAnswers": [
-                    "Creare giochi terapeutici",
-                    "Monitorare la dieta dei pazienti",
-                    "Gestire le cartelle cliniche"
-                ]
+                    "phash",
+                    "ahash",
+                    "Cross-correlation"
+                ],
+                "correctAnswer": "All the above"
             },
             {
-                "question": "Quale dei seguenti non è un uso comune della realtà aumentata (AR)?",
-                "correctAnswer": "Aumentare il calore generato dai dispositivi elettronici",
+                "question": "In agreement to the class discussion, which description better describes the design activity?",
                 "otherAnswers": [
-                    "Migliorare l'istruzione con contenuti interattivi",
-                    "Fornire assistenza tecnica remota",
-                    "Creare esperienze di marketing coinvolgenti"
-                ]
+                    "Similarity in the dataset requires more space and processing time",
+                    "Similarity in the dataset can improve generalization",
+                    "None of the above"
+                ],
+                "correctAnswer": "Both of the above"
             },
             {
-                "question": "Cosa rappresenta il termine 'registration' nel contesto dell'AR?",
-                "correctAnswer": "L'allineamento preciso di oggetti virtuali con l'ambiente reale",
+                "question": "In agreement to the class discussion, in a dataset of 1100 labelled images, the search for duplications is typically achieved...",
                 "otherAnswers": [
-                    "La registrazione di nuovi utenti nell'applicazione",
-                    "La memorizzazione dei dati di tracciamento",
-                    "L'aggiornamento del software di AR"
-                ]
+                    "by manual exploration of the dataset for better results since the number of images is not critical"
+                ],
+                "correctAnswer": "by automatic iterations"
             },
             {
-                "question": "Quale dei seguenti è un esempio di sensore di profondità utilizzato in AR?",
-                "correctAnswer": "Lidar",
+                "question": "In agreement to the class discussion, what kind of labelling error is generally the worst case for the accuracy of the generalization of the model? ERR1 = Duplications with same labels EER2 = Duplications with different labels",
                 "otherAnswers": [
-                    "Microfono",
-                    "Termometro",
-                    "Accelerometro"
-                ]
+                    "ERR1",
+                    "ERR1 = EER2"
+                ],
+                "correctAnswer": "ERR2"
             },
             {
-                "question": "Perché è importante la calibrazione dei sensori in un sistema di AR?",
-                "correctAnswer": "Per garantire la precisione dei dati di tracciamento e l'allineamento degli oggetti virtuali",
+                "question": "According to the class discussion, about the relationship between the operation of cross-correlation and convolution it is possible to say that",
                 "otherAnswers": [
-                    "Per migliorare la qualità audio dell'applicazione",
-                    "Per aumentare la durata della batteria del dispositivo",
-                    "Per ridurre le dimensioni dell'applicazione"
-                ]
+                    "Despite the mathematical expression is similar, the meaning and their use is completely different",
+                    "There is no specific relationship since they are different in meaning and mathematical expressions"
+                ],
+                "correctAnswer": "They are very similar in meaning and mathematical expression"
             },
             {
-                "question": "Qual è una delle principali sfide nella realizzazione di esperienze AR per dispositivi mobili?",
-                "correctAnswer": "Limitazioni delle risorse di calcolo e della durata della batteria",
+                "question": "According to the class discussion, what is the characteristic of the self-correlation (O = xcor2(A,A)) map produced by a generic image?",
                 "otherAnswers": [
-                    "La mancanza di fotocamere sui dispositivi mobili",
-                    "L'impossibilità di connettersi a internet",
-                    "L'assenza di schermi a colori"
-                ]
+                    "A flat and noisy central plateau",
+                    "It is not possible to create an autocorrelation map from one single images, two different images are needed"
+                ],
+                "correctAnswer": "An evident spike at the center with a very well-defined maximum"
             },
             {
-                "question": "Quale tecnica di AR utilizza punti caratteristici dell'ambiente per il tracciamento?",
-                "correctAnswer": "Feature-based tracking",
+                "question": "If your data set contains extreme outliers, it better to use as preprocessing",
                 "otherAnswers": [
-                    "Markerless tracking",
-                    "Template matching",
-                    "Optical flow"
-                ]
+                    "Min-max normalization",
+                    "Z’ norm"
+                ],
+                "correctAnswer": "Feature clipping"
             },
             {
-                "question": "Come può la realtà aumentata migliorare le operazioni di manutenzione industriale?",
-                "correctAnswer": "Fornendo istruzioni visive in tempo reale sovrapposte agli impianti",
+                "question": "A logarithmic scaling to one feature values is typically applied in a case of",
                 "otherAnswers": [
-                    "Riducendo il numero di tecnici necessari",
-                    "Eliminando completamente la necessità di formazione",
-                    "Automatizzando tutti i processi di manutenzione"
-                ]
+                    "Outliers’ presence",
+                    "Negative values"
+                ],
+                "correctAnswer": "A very large range in the values (>0)"
             },
             {
-                "question": "Qual è uno degli obiettivi del 'marker-based tracking' in AR?",
-                "correctAnswer": "Utilizzare marcatori fisici per aiutare il sistema a rilevare la posizione della fotocamera",
+                "question": "According to the scientific visualization rules presented in class, if you are plotting many figures of merit obtained by your trained neural network on a new dataset,  which is the correct ranking of visual attributes to be used? Left: low accuracy Right: HIGH ACCURACY",
                 "otherAnswers": [
-                    "Rilevare automaticamente oggetti senza l'uso di marcatori",
-                    "Monitorare la salute degli utenti",
-                    "Fornire contenuti audio di alta qualità"
-                ]
+                    "Color intensity > Hue > Length",
+                    "Area > Length > Hue",
+                    "Slope > Angle > Volume"
+                ],
+                "correctAnswer": "Hue > Area > Length"
             },
             {
-                "question": "Cosa si intende per 'drift' nelle tecniche di tracciamento inerziale?",
-                "correctAnswer": "L'accumulo di errori nel tempo che porta a una perdita di precisione",
+                "question": "According to the scientific visualization rules presented in class, is it possible to plot a graphical representation of the confidence level of your figures of merit of your trained model?",
                 "otherAnswers": [
-                    "L'instabilità del segnale GPS",
-                    "L'incoerenza nei dati delle fotocamere",
-                    "La mancanza di calibrazione dei sensori"
-                ]
+                    "No, it is a statistical index with different units and meaning and hence cannot be represented in the same plot"
+                ],
+                "correctAnswer": "Yes, the confidence interval data have the same units and meaning, and they can be represented in the same plot"
             },
             {
-                "question": "Quale è un'applicazione comune della realtà aumentata nel settore retail?",
-                "correctAnswer": "Visualizzazione di prodotti virtuali nel contesto reale del cliente",
+                "question": "According to the discussion presented in class about the data visualization, and considering the following steps of the design workflow 1) Get Data, 2) Clean Manipulate Data, 3) Train models, 4) Test Data, 5) Improve the design, which are the main step/steps where data visualization should be involved?",
                 "otherAnswers": [
-                    "Misurazione della temperatura degli acquirenti",
-                    "Miglioramento della sicurezza del negozio",
-                    "Gestione automatica delle scorte"
-                ]
+                    "#1",
+                    "#5",
+                    "#1 and #5"
+                ],
+                "correctAnswer": "#2, #3 and #5"
             },
             {
-                "question": "Qual è il ruolo della computer vision nelle applicazioni di realtà aumentata?",
-                "correctAnswer": "Analizzare e interpretare le immagini catturate per sovrapporre gli oggetti virtuali",
+                "question": "According to the discussion presented in class about the similarity, consider an image A(x, y) with internal similarity (repetitions of patterns). What happens to the output of the self-cross correlation (O = xcorr2(2, 2))",
                 "otherAnswers": [
-                    "Aumentare la velocità del processore del dispositivo",
-                    "Ridurre il consumo di energia",
-                    "Memorizzare i dati degli utenti"
-                ]
+                    "It is not possible to apply the cross correlation to the same image",
+                    "Output O tends to be a flat plateau with one clear central peak",
+                    "Output O tends to have many equivalent peaks with the same maximum value"
+                ],
+                "correctAnswer": "Output O tends to have many peaks and one evident maximum"
             },
             {
-                "question": "Quale approccio AR non richiede marcatori fisici per funzionare?",
-                "correctAnswer": "Markerless tracking",
+                "question": "The design of intelligent systems for Industry 4.0 applications should be compliant to the following main design principles.",
                 "otherAnswers": [
-                    "Marker-based tracking",
-                    "Template-based tracking",
-                    "Projection-based tracking"
-                ]
+                    "Interoperability, Information transparency, Improved technical assistance",
+                    "Interoperability, Information transparency, Improved technical assistance, Wireless connectivity",
+                    "Interoperability, Information transparency, Decentralized decisions"
+                ],
+                "correctAnswer": "Interoperability, Information transparency, Improved technical assistance, Decentralized decisions"
             },
             {
-                "question": "In che modo la realtà aumentata può essere utilizzata nell'educazione medica?",
-                "correctAnswer": "Simulando procedure chirurgiche complesse per l'addestramento degli studenti",
+                "question": "Machine Learning on CPUs offer the following advantages",
                 "otherAnswers": [
-                    "Fornendo ricette per una dieta sana",
-                    "Monitorando i segni vitali dei pazienti",
-                    "Progettando nuovi dispositivi medici"
-                ]
+                    "Ease of portability and use-case flexibility, Market availability at different performance and prices",
+                    "Ease of portability and use-case flexibility, Deployment across a wide spectrum of devices",
+                    "Market availability at different performance and prices, Deployment across a wide spectrum of devices"
+                ],
+                "correctAnswer": "Ease of portability and use-case flexibility, Market availability at different performance and prices, Deployment across a wide spectrum of devices"
+            },
+            {
+                "question": "The GoogLeNet deep learning pretrained model discussed during the course is model for",
+                "otherAnswers": [
+                    "Post processing",
+                    "None of the other options",
+                    "Image Enhancing",
+                    "Segmentation"
+                ],
+                "correctAnswer": "Image classification"
+            },
+            {
+                "question": "According to the class discussion, text prefiltering is often used as input for a neural network to deal with a large text input making the networks able to classifiy the input",
+                "otherAnswers": [
+                    "True, using the hamming distance as prefilering",
+                    "True, using the cosine distance as prefilering",
+                    "True, using the string approximate match distance as prefilering",
+                    "True, using the discrete gradient descent as prefilering"
+                ],
+                "correctAnswer": "True, using the so-called “word embeddings” technique"
+            },
+            {
+                "question": "The Inception-v3 deep learning pretrained model discussed during the course is a model for",
+                "otherAnswers": [
+                    "Post processing",
+                    "None of the other options",
+                    "Image Enhancing",
+                    "Segmentation"
+                ],
+                "correctAnswer": "Image classification"
+            },
+            {
+                "question": "Intelligent vision systems can achieve Semantic segmentation by",
+                "otherAnswers": [
+                    "A hybrid approach by blob detection to select candidate ROIs and then image classification of the ROIs",
+                    "A hybrid approach by blob detection to select candidate ROIs and then image segmentation of the ROIs",
+                    "None of the other options"
+                ],
+                "correctAnswer": "A complete fully convolutional solution"
+            },
+            {
+                "question": "An AI model is processing an input RGB image to evaluate the age expressed in years of the face present in the image. What kind of model is it?",
+                "otherAnswers": [
+                    "Classifier Model",
+                    "Clustering Model",
+                    "Reinforced Learning Model",
+                    "None of the above"
+                ],
+                "correctAnswer": "Regressor Model"
+            },
+            {
+                "question": "Acoording to class discussion, the theory of intelligent systems should include the following designing steps:",
+                "otherAnswers": [
+                    "Representation",
+                    "Representation, Evaluation",
+                    "None of the other option"
+                ],
+                "correctAnswer": "Representation, Evauation, Optimization"
+            },
+            {
+                "question": "Clustering always requires supervised dataset",
+                "otherAnswers": [
+                    "Yes"
+                ],
+                "correctAnswer": "No"
+            },
+            {
+                "question": "Acoording to class discussion, using a black box solution is:",
+                "otherAnswers": [
+                    "Bad practice for a ML designer",
+                    "Since all state of the art models tend to be quite large and un-explainable, it is current good practice to adopt black box approach since you get the best models"
+                ],
+                "correctAnswer": "Can be used under specific circumstances"
+            },
+            {
+                "question": "You have a dataset X of 1000 samples and number of features F = 4 features. You want to reduce the number of features F to 2 for data visualization. According to the goal, consider the following options. \n OPTION A: Apply PCA to X and select only the first 2 Principal Components. \n OPTION B: Apply the Feedforward Feature Selection to X and select only the first 2 more relevant features.",
+                "otherAnswers": [
+                    "Option A is NOT possible. Option B is NOT possible",
+                    "Option A is NOT possible. Option B is possible",
+                    "Option A is possible. Option B is NOT possible."
+                ],
+                "correctAnswer": "Option A is possible. Option B is possible."
+            },
+            {
+                "question": "You have a feature in your dataset with the following values F1 = [-5, 0, +5], which normalization will give you the following F1_norm = [0, 0.5, 1",
+                "otherAnswers": [
+                    "Z-score",
+                    "Clipping",
+                    "A different type of normalization"
+                ],
+                "correctAnswer": "Min-MAX"
+            },
+            {
+                "question": "According to the class discussion, in general for a given small dataset X, if you train a feed-forward neural models (of the same type) with an increasing number of neurons, which case is more probable?",
+                "otherAnswers": [
+                    "The training error and the validation will decrease indefinitely",
+                    "The training error will increase",
+                    "The validation error will decrease indefinitely"
+                ],
+                "correctAnswer": "None of the below"
+            },
+            {
+                "question": "According to the class discussion, in a cross-validation single test, which train/test partition of the samples will provide the lower training error but the lower confidence in the test results?",
+                "otherAnswers": [
+                    "Training set = 75%, Test Set = 25%",
+                    "Training set = 50%, Test Set = 50%",
+                    "Training set = 25%, Test Set = 75%",
+                    "Training set = 01%, Test Set = 99%"
+                ],
+                "correctAnswer": "Training set = 99%, Test Set = 01%"
+            },
+            {
+                "question": "According to the class discussion, what kind of activity can be performed on the test set?",
+                "otherAnswers": [
+                    "Mean test error estimation",
+                    "Mean test error estimation and standard deviation",
+                    "Confusion matrix test"
+                ],
+                "correctAnswer": "All the below"
+            },
+            {
+                "question": "According to the class discussion, what kind of activity can be performed on the train set?",
+                "otherAnswers": [
+                    "Design of the #of neurons",
+                    "Design of the #of layers",
+                    "Normalization",
+                    "PCA"
+                ],
+                "correctAnswer": "All the other options"
+            },
+            {
+                "question": "According to the class discussion, where can be performed the feature engineering?",
+                "otherAnswers": [
+                    "Only on the test set",
+                    "On the train set and the test set",
+                    "Not on the train, not on the test set, but only on a different dataset"
+                ],
+                "correctAnswer": "Only on the train set"
+            },
+            {
+                "question": "A simple k-Fold Cross Validation procedure may",
+                "otherAnswers": [
+                    "Making impossible to process the test error",
+                    "Get stuck into one the local minima",
+                    "Produce severe overfitting",
+                    "None of the other answers"
+                ],
+                "correctAnswer": "Lead to disarranging the proportion of examples from each class in the test partitions"
+            },
+            {
+                "question": "Which option is correct?",
+                "otherAnswers": [
+                    "From the confusion matrix is possible to process the classification error and vice versa",
+                    "The confusion matrix is applicable only to binary classification systems",
+                    "The classification error is equal to the sum of the diagonal elements of the confusion matrix"
+                ],
+                "correctAnswer": "From the confusion matrix is possible to process the classification error"
+            },
+            {
+                "question": "According to the notation used in class, which kind of a model is described by the equation f(x) = sgn(w ∙ x + b)",
+                "otherAnswers": [
+                    "Liner regressor",
+                    "Soft-max neuron",
+                    "Sigmoidal neuron",
+                    "Gradient descent formula",
+                    "Number of the model’s parameters"
+                ],
+                "correctAnswer": "Liner classifier"
+            },
+            {
+                "question": "According to the notation used in class, which kind of a classifier is better described by the following definition: “the output is the label produced by the most probable classifier”",
+                "otherAnswers": [
+                    "Supervised Classifier",
+                    "K-means",
+                    "None of the other options"
+                ],
+                "correctAnswer": "Bayes Optimal Classifier"
+            },
+            {
+                "question": "According to the class discussion the kNN classifier, what kind of learning is it?",
+                "otherAnswers": [
+                    "Eager Learning",
+                    "Hard-limited Learning",
+                    "Unsupervised Clustering",
+                    "None of the other options"
+                ],
+                "correctAnswer": "Instance-based Learning"
+            },
+            {
+                "question": "According to the class discussion, what is the classifier with the following properties: not based on neural techniques; it’s deterministic with no random initialization; perfect repeatability; a minimum number of parameters is needed; learning is very simple but effective; perfect explain ability",
+                "otherAnswers": [
+                    "Linear classifier",
+                    "Decision Tree",
+                    "K-means",
+                    "None of the other options"
+                ],
+                "correctAnswer": "kNN"
+            },
+            {
+                "question": "According to the class discussion on kNN classifiers about the k parameter and its relationship to regularization of the decision boundaries and the computational complexity, what is the correct option about larger values of k?",
+                "otherAnswers": [
+                    "Less regularization and more complexity",
+                    "Less regularization and less complexity",
+                    "More regularization and less complexity",
+                    "The parameter k is not related to regularization and complexity"
+                ],
+                "correctAnswer": "More regularization and more complexity"
+            },
+            {
+                "question": "According to the class discussion on PCA what is the correct option?",
+                "otherAnswers": [
+                    "PCA vectors are originating from the center of mass of the points",
+                    "All subsequent principal component vectors are orthogonal"
+                ],
+                "correctAnswer": "All the other options"
+            },
+            {
+                "question": "According to the class discussion on PCA what is the correct option?",
+                "otherAnswers": [
+                    "All subsequent principal component vectors are orthogonal",
+                    "The variance of the data projection on the first PCA vectors is maximized"
+                ],
+                "correctAnswer": "All the other options"
+            },
+            {
+                "question": "According to the class discussion about unsupervised learning, what is the method with the following properties: you need to specify the number of clusters k in advance, is unable to handle noisy data and outliers, it is not suitable to discover clusters with non-convex shapes",
+                "otherAnswers": [
+                    "kNN",
+                    "Decision tree",
+                    "None of the other options"
+                ],
+                "correctAnswer": "K-means"
+            },
+            {
+                "question": "According to the class discussion, considering the equation of the backpropagation in a feedforward neural network of weight w_ij connected to the following output neuron k, which is the missing term? DELTAW_ij = ? ∗ y_j ∗ delta_k",
+                "otherAnswers": [
+                    "??? = x_j (the input vector)",
+                    "??? = alfa (the regularization term > 1)",
+                    "??? = x_j (the input vector error)"
+                ],
+                "correctAnswer": "??? = alfa (the regularization term < 1)"
+            },
+            {
+                "question": "According to the class discussion, considering a general CNN architecture, what is the sequence of modules which is more likely",
+                "otherAnswers": [
+                    "Input layer → Relu → Convolution → Max Pooling → Softmax → Output layer",
+                    "Input layer → Relu → Max Pooling → Softmax → Convolution → Output layer ahash",
+                    "Input layer → Relu → Max Pooling → Convolution → Softmax → Output layer"
+                ],
+                "correctAnswer": "Input layer → Convolution → Relu → Max Pooling → Softmax → Output layer"
+            },
+            {
+                "question": "According to the class discussion, considering a standard intelligent vision system, which capability can be processed onboard on a recent smart industrial camera?",
+                "otherAnswers": [
+                    "Segmentation",
+                    "Segmentation, Measurement",
+                    "Segmentation, Measurement, Classification with trained non-deep models",
+                    "Segmentation, Measurement, Classification with trained deep models and training of deep models"
+                ],
+                "correctAnswer": "Segmentation, Measurement, Classification with trained deep models"
+            },
+            {
+                "question": "According to the class discussion, Traditional Segmentation methods are quite useful to produce blobs or object candidates to be further processed by deep models for classification or measurements. Traditional Segmentation methods can be partitioned in",
+                "otherAnswers": [
+                    "Global knowledge, Edge-based",
+                    "Edge-based, Region-based",
+                    "None of the other options"
+                ],
+                "correctAnswer": "Global knowledge, Edge-based, Region-based"
+            },
+            {
+                "question": "According to the class discussion referred to edge computing, is it possible to process images with trained deep learning models on external small, dedicated devices connect via USB connection?",
+                "otherAnswers": [
+                    "False: the USB bandwidth make this option not possible",
+                    "False: the needed computational complexity needed to run trained deep learning models make this option not possible",
+                    "False: the bandwidth and the computational complexity need to process images with trained deep learning model is not adequate"
+                ],
+                "correctAnswer": "True: the usage of dedicated processors and the USB bandwidth make this option possible"
+            },
+            {
+                "question": "According to the class discussion what is Greedy Layer-Wise Training?",
+                "otherAnswers": [
+                    "A supervised training step to improve auto-encoders",
+                    "A supervised training step to classical feedforward networks",
+                    "An unsupervised training step to classical feedforward networks"
+                ],
+                "correctAnswer": "An unsupervised training step to improve auto-encoders"
+            },
+            {
+                "question": "According to the scientific visualization rules presented in class, is it possible to plot a graphical representation of the confidence level of one single figure of merit (like the accuracy) of your trained model?",
+                "otherAnswers": [
+                    "No, it is a statistical index with different units and meaning and hence cannot be represented in the same plot"
+                ],
+                "correctAnswer": "Yes, the confidence interval data have different units and meaning but they can be represented in the same plot using different visual attributes like \"slope\" and \"area\""
+            },
+            {
+                "question": "The number of parameters to be fixed during a complete training in a deep learning model like the VGGNet presented in the course is about",
+                "otherAnswers": [
+                    "< 100000",
+                    "about 1 Million",
+                    "about 10 Million"
+                ],
+                "correctAnswer": "> 100 Million"
+            },
+            {
+                "question": "Considering the class discussing about the basic metrics in data similarity, given a vector A, vector B, a real number alpha, and the cosine metrics cos(A,B) it is possible to say that",
+                "otherAnswers": [
+                    "alpha * cos(A,B) = cos(alpha*A, B)",
+                    "cos(A,B) = cos(alpha*A, B) = cos(A, alpha*B)",
+                    "alpha * cos(A,B) = cos(alpha*A, alpha*B)"
+                ],
+                "correctAnswer": "cos(A,B) = cos(alpha*A, alpha*B)"
+            },
+            {
+                "question": "Referring to the class discussion on data leakage what is the worst situation?",
+                "otherAnswers": [
+                    "The unwanted leakage of data from training dataset to test data set",
+                    "None of the other options since transferring data from test and/or training dataset is normal when the accuracy of the model is tested",
+                    "The unwanted leakage of data from test dataset to training data set since you are subtracting data to the generalization test, making the situation more pessimistic"
+                ],
+                "correctAnswer": "The unwanted leakage of data from test dataset to training data set since you are subtracting data to the generalization test, making the situation more optimistic"
+            },
+            {
+                "question": "What task of an intelligent vision system is associated to following description: split or separate an image into regions using features, patterns and colors to facilitate recognition, understanding, and Region Of Interests (ROI) processing and measurements.",
+                "otherAnswers": [
+                    "Model training",
+                    "Post processing",
+                    "Enhancing",
+                    "Feature engineering"
+                ],
+                "correctAnswer": "Segmentation"
+            },
+            {
+                "question": "In agreement to the class discussion, what kind of labelling error is generally the worst case for the accuracy of the generalization of the model? ERR1 = Duplications with same labels, EER2 = Duplications with different labels",
+                "otherAnswers": [
+                    "ERR1 is equalt to EER2 by definition",
+                    "ERR1 is the worst case",
+                    "ERR1 is roughly equalt to EER2 in general"
+                ],
+                "correctAnswer": "ERR2 is the worst case"
+            },
+            {
+                "question": "According to the class discussion, the convolution/correlation operations are of foundamental relevance for many deep learning models. What is the characteristic of the autocorrelation map produced by a generic image?",
+                "otherAnswers": [
+                    "It is not possible to create an autocorrelation map from one single images, two different images are needed",
+                    "None of the other options",
+                    "A flat and noisy central plateau"
+                ],
+                "correctAnswer": "An evident spike at the center with a very well defined maximum"
+            },
+            {
+                "question": "A tensor processing unit (TPU) is",
+                "otherAnswers": [
+                    "A part of a model of the Convolutional Neural Network used to process dedicated tensorial activation functions in the neurons",
+                    "An internal unit of the Arm processor architecture introduced to support 8-bit fixed-point matrix multiplication for deep learning models",
+                    "None of the other options"
+                ],
+                "correctAnswer": "An AI accelerator application-specific integrated circuit (ASIC) and the related board developed specifically for neural network machine learning"
+            },
+            {
+                "question": "You have a feature in your dataset with the following values F2 = [ -13 0 1 2 4 128 ], which normalization will give you the following F2_norm = [0 0 1 2 4 10 ]",
+                "otherAnswers": [
+                    "Z-score",
+                    "Min-MAX",
+                    "A different type of normalization"
+                ],
+                "correctAnswer": "Clipping"
+            },
+            {
+                "question": "Considering the possible Intelligent Vision tasks which is the correct option?",
+                "otherAnswers": [
+                    "Instance Segmentation is less complex than Object Detection",
+                    "Instance Segmentation and Object Detection have a similar complexity",
+                    "The other otpions are not Intelligent Vision tasks"
+                ],
+                "correctAnswer": "Instance Segmentation is more complex than Object Detection"
+            },
+            {
+                "question": "In a given picture ImmA you see 1 car and 5 people in a city background. Considering the Intelligent systems IS processing the image ImmA and producing in output the label “humans”, what Intelligent Vision task is performing?",
+                "otherAnswers": [
+                    "Instance segmentation",
+                    "Object detection",
+                    "Semantic segmentation"
+                ],
+                "correctAnswer": "Image classification"
+            },
+            {
+                "question": "According to the class discussion, considering the training of deep learning models on standard CPUs and standard commercial GPUs boards, what is the gain in training performance (time) and efficiency (energy) for a medium/large-size project?",
+                "otherAnswers": [
+                    "About 100x in performance and 10x in efficiency",
+                    "More than 100x in performance and more than 5x in efficiency",
+                    "About 2x in performance and 2x in efficiency"
+                ],
+                "correctAnswer": "About 10x in performance and 5x in efficiency"
+            },
+            {
+                "question": "A basic industrial setup for Intelligent vision systems is typically composed by the following elements",
+                "otherAnswers": [
+                    "Standard industrial smart camera with optics, external processing HW and SW units, illumination system",
+                    "Standard industrial camera with optics, illumination system",
+                    "Just a standard industrial camera with optics",
+                    "Standard industrial camera with optics, processing HW and SW units"
+                ],
+                "correctAnswer": "Standard industrial camera with optics, processing HW and SW units, illumination system"
+            },
+            {
+                "question": "Acoording to class discussion, the classification item and thei decision boundaries, it is possible in general to optimize during the training/optimization step",
+                "otherAnswers": [
+                    "The accuracy",
+                    "The margin"
+                ],
+                "correctAnswer": "Both"
+            },
+            {
+                "question": "Acoording to class discussion about AI regulation in EU, regulation approach is based on:",
+                "otherAnswers": [
+                    "List of use cases",
+                    "Risk assessment of the application",
+                    "None of the above"
+                ],
+                "correctAnswer": "Both"
+            },
+            {
+                "question": "Acoording to the discussion presented in class, the EU regulatory framework for AI is:",
+                "otherAnswers": [
+                    "Mainly focused on public services",
+                    "Mainly focused on health-related applications",
+                    "Mainly focused on data privacy"
+                ],
+                "correctAnswer": "None of the other options"
             }
         ];
-        
+
         shuffle(questionsData);
 
         let correctCount = 0;
